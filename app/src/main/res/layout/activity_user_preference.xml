@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    tools:context=".Activity.UserPreferenceActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fifteen_dp"
+        android:fontFamily="@font/poppins"
+        android:padding="@dimen/fifteen_dp"
+        android:text="Welcome \n\nPlease select your preferred activity"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/thirty"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/preferenceRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llButtonLayout"
+        android:layout_below="@id/title"
+        android:layout_marginStart="@dimen/fifteen_dp"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:layout_marginEnd="@dimen/fifteen_dp"
+        android:layout_marginBottom="@dimen/fifteen_dp"
+        android:visibility="gone"
+        tools:listitem="@layout/app_content" />
+
+    <TextView
+        android:id="@+id/tvNoDataFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No Preference Found/Loaded"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/llButtonLayout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            app:dividerColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</RelativeLayout>

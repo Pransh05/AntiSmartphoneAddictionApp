@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/appCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/eight_dp"
+        app:cardCornerRadius="@dimen/eight_dp"
+        app:cardElevation="@dimen/four_dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <CheckBox
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:gravity="center"
+               android:layout_gravity="center"
+               android:layout_margin="@dimen/fifteen_dp"
+               android:id="@+id/cbPreference" />
+
+           <TextView
+               android:id="@+id/txtPreferenceName"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_margin="@dimen/content_padding"
+               android:fontFamily="@font/poppins"
+               android:padding="@dimen/eight_dp"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="18sp" />
+
+       </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

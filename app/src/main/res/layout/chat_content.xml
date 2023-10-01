@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llSenderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/content_padding"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eighteen_dp"
+            android:minWidth="@dimen/fiftysix"
+            android:background="@drawable/outgoing_chat"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSenderMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginEnd="@dimen/twelve_dp"
+                android:padding="@dimen/content_padding"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSenderMessageTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/eighteen_dp"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twelve_dp" />
+
+    <LinearLayout
+        android:id="@+id/llReceiverLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/content_padding"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eighteen_dp"
+            android:background="@drawable/incoming_chat"
+            android:minWidth="@dimen/fiftysix"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvReceiverMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="@dimen/twelve_dp"
+                android:padding="@dimen/content_padding"
+                android:textAlignment="viewStart"
+                android:textColor="@color/mainColor" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvReceiverMessageTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/eighteen_dp"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twelve_dp" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/menuUsage"
+        android:icon="@drawable/baseline_data_usage_24"
+        android:title="Usage"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/menuHistory"
+        android:icon="@drawable/baseline_history_24"
+        android:title="History"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/menuLimit"
+        android:icon="@drawable/baseline_timer_24"
+        android:title="Limit"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menuRecommend"
+        android:icon="@drawable/baseline_recommend_24"
+        android:title="Recommend"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menuCommunity"
+        android:icon="@drawable/baseline_comment_24"
+        android:title="Community"
+        tools:ignore="HardcodedText" />
+
+</menu>

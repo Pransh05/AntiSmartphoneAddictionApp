@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/appCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/eight_dp"
+        app:cardCornerRadius="@dimen/eight_dp"
+        app:cardElevation="@dimen/four_dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCommunityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:maxLines="2"
+                android:padding="@dimen/eighteen_dp"
+                android:text="Community Name:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/eighteen_dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:maxLines="3"
+                android:paddingHorizontal="@dimen/eighteen_dp"
+                android:text="Description:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen_dp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
